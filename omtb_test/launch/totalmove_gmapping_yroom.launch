@@ -1,0 +1,16 @@
+<launch>
+
+  
+  <include file="$(find omtb_gazebo)/launch/y_room.launch">
+  </include>
+  
+  <include file="$(find omtb_slam2d)/launch/slam.launch">
+     
+  </include>
+    <include file="$(find omtb_control)/launch/automove_y_room.launch">
+  </include>
+    
+   
+ 
+  
+</launch>

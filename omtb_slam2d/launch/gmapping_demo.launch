@@ -1,0 +1,8 @@
+<launch>
+
+    <include file="$(find omtb_slam2d)/launch/ggmapping.launch"/>
+
+    <!-- 启动rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find omtb_slam2d)/rviz/gmapping.rviz"/>
+
+</launch>

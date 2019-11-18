@@ -1,0 +1,2 @@
+<!-- Load Rosbag to record -->
+   <node name="record" pkg="rosbag" type="record" args="-a -O $(find omtb_gazebo)/rosbag"/>

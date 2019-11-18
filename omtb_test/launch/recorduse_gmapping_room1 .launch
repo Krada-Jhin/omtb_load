@@ -1,0 +1,9 @@
+<launch>
+
+  <include file="$(find omtb_slam2d)/launch/slam.launch">
+     
+  </include>
+    <node pkg="rosbag" type="play" name="playe" output="screen" args="--clock /home/zuo/database/tModel-P/calib/test/2017-10-18-21-30-41.bag"/>
+ 
+  
+</launch>

@@ -1,0 +1,17 @@
+<launch>
+
+  
+  <include file="$(find omtb_gazebo)/launch/l_room.launch">
+  </include>
+  
+  <include file="$(find omtb_slam2d)/launch/slam.launch">
+     
+  </include>
+    <include file="$(find omtb_control)/launch/automove_l_room.launch">
+  </include>
+    
+  <node pkg="rosbag" type="record" name="bag_record" args=" ~/catkin_slam/src/omtb/omtb_test/bag/  "/> 
+
+ 
+  
+</launch>
